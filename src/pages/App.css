@@ -1,0 +1,52 @@
+/* Importera font */
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+  background-color: #FFAE34;
+  border-radius: 8px;
+  padding: 10px;
+  width: 382px; /* Adjust the width of the card */
+  height: 241px;
+  position: relative;
+  margin: 10px auto; /* Center the card horizontally */
+}
+
+.vendorlogo {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 70%;
+}
+
+.wifilogo {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.chiplogo {
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 75px;
+  left: 25px;
+}
+
+.number {
+  position: absolute;
+  top: 123px;
+  left: 25px;
+  font-family: 'PT Mono';
+  font-size: 28px;
+  font-weight: 400;
+  max-width: 335px;
+}
