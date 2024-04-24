@@ -25,6 +25,16 @@ export default function Card({ vendor, number }) {
         {<img src={chipLogo} alt="chip" className="chiplogo"/>}
         {vendorlogoSrc && <img src={vendorlogoSrc} alt={`${vendor} Logo`} className="vendorlogo"/>}
         <h1 className="number">{number}</h1>
+        <div className="namedate">
+            <div className="line1">
+                <p>CARDHOLDER NAME</p>
+                <p>VALID THRU</p>
+            </div>
+            <div className="line2">
+                <p>NAME</p>
+                <p>DATE</p>
+            </div>
+        </div>
     </div>
     );
 }

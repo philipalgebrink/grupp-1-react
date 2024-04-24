@@ -10,10 +10,10 @@ body {
   background-color: #FFAE34;
   border-radius: 8px;
   padding: 10px;
-  width: 382px; /* Adjust the width of the card */
+  width: 382px;
   height: 241px;
   position: relative;
-  margin: 10px auto; /* Center the card horizontally */
+  margin: 10px auto;
 }
 
 .vendorlogo {
@@ -49,4 +49,35 @@ body {
   font-size: 28px;
   font-weight: 400;
   max-width: 335px;
+  line-height: 32px;
 }
+
+.namedate {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 50px);
+    max-width: 100%;
+  }
+  
+  
+  .line1,
+  .line2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line1 p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 13px;
+  }
+  
+  .line2 p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
