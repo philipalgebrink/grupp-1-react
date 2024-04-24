@@ -13,7 +13,6 @@ function App() {
         <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
       </div>
       <Button />
-      <Form />
     </div>
   );
 }
