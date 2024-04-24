@@ -9,9 +9,8 @@ function App() {
   return (
     <div className="App">
     <Header />
-      <div className="card">
-        <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
-      </div>
+    <p className="title">ACTIVE CARD</p>
+      <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
       <Button />
     </div>
   );

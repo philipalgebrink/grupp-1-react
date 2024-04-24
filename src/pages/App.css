@@ -6,6 +6,16 @@ body {
     padding: 0px;
 }
 
+.App {
+  text-align: center;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Standard kort */
 .card {
   background-color: #FFAE34;
   border-radius: 8px;
@@ -13,8 +23,25 @@ body {
   width: 382px;
   height: 241px;
   position: relative;
-  margin: 10px auto;
+  margin: 0 auto;
 }
+
+/* Olika kort */
+.card.bitcoin {
+    background-color: #FFAE34; /* Bitcoin color */
+  }
+  
+  .card.evil {
+    background-color: #F33355; /* Evil Corp color */
+  }
+
+  .card.ninja {
+    background-color: #222222; /* Ninja Bank color */
+  }
+
+  .card.block {
+    background-color: #8B58F9; /* Block Chain Inc */
+  }
 
 .vendorlogo {
   width: 35px;
@@ -30,7 +57,8 @@ body {
   height: 45px;
   position: absolute;
   top: 25px;
-  left: 25px;
+  left: 27px;
+  opacity: 100%;
 }
 
 .chiplogo {
@@ -39,11 +67,14 @@ body {
   position: absolute;
   top: 75px;
   left: 25px;
+  opacity: 100%;
+  background-color: #bebebe;
+  border-radius: 8px;
 }
 
 .number {
   position: absolute;
-  top: 123px;
+  top: 130px;
   left: 25px;
   font-family: 'PT Mono';
   font-size: 28px;
@@ -68,6 +99,7 @@ body {
   .line2 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
   }
 
   .line1 p {
@@ -78,6 +110,6 @@ body {
   
   .line2 p {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 20px;
   }
