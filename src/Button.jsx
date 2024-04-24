@@ -2,7 +2,7 @@
 export default function Button() {
     return(
     <div>
-        <h1>Button</h1>
+        <h1>Grupp 1</h1>
     </div>
     );
 }
