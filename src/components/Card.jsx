@@ -1,7 +1,8 @@
-export default function Card() {
+export default function Card({name}) {
     return(
     <div>
-        <h1>Card</h1>
+        <h1>Rubrik</h1>
+        <h1>{name}</h1>
     </div>
     );
 }
