@@ -11,6 +11,9 @@ function App() {
     <Header />
     <p className="title">ACTIVE CARD</p>
       <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
+      <Card vendor="ninja" number="1234 5678 9101 1123"/>
+      <Card vendor="block" number="1234 5678 9101 1123"/>
+      <Card vendor="evil" number="1234 5678 9101 1123"/>
       <Button />
     </div>
   );
