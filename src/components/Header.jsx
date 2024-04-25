@@ -1,6 +1,11 @@
 function Header({ title }) {
     return (
-      <div style={{ border: "2px solid black", padding: "20px" }}>
+      <div style={{textAlign: "center", 
+      padding: "20px",
+      fontFamily: "Source Sans Pro",
+      fontSize: "35px",
+      fontWeight: 700,
+      lineHeight: "35px" }}>
         {title}
       </div>
     );
