@@ -1,18 +1,18 @@
 export default function Form() {
     return(
-    <form>
-        <label>CARD NUMBER</label>
-        <input type="text" />
-        <label>CARDHOLDER NAME</label>
-        <input type="text" />
-        <section>
-            <label>VALID THRU</label>
-            <input type="text" />
-            <label>CCV</label>
-            <input type="text" />
+    <form className="form">
+        <label className="form-title">CARD NUMBER</label>
+        <input className="form-input" type="text" />
+        <label className="form-title">CARDHOLDER NAME</label>
+        <input className="form-input" type="text" />
+        <section className="form-section">
+            <label className="form-title">VALID THRU</label>
+            <label className="form-title">CCV</label>
+            <input className="form-input"type="text" />
+            <input className="form-input" type="text" />
         </section>
-        <label>VENDOR</label>
-        <select name="#" id="#">
+        <label className="form-title">VENDOR</label>
+        <select className="form-input" name="#" id="#">
             <option value="#">1</option>
             <option value="#">2</option>
             <option value="#">3</option>
