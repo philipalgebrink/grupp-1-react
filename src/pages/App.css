@@ -1,6 +1,10 @@
 /* Importera font */
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
 
+* {
+  font-family: sans-serif;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -128,3 +132,39 @@ body {
   /////////////////////////////////////////////////////////
   */
   
+
+
+
+
+
+
+   /* ////////////////////////////////////////////////////////
+  ///////// FORM /////////////////////////////////////////
+  /////////////////////////////////////////////////////////
+  */
+  .form {
+    width: 385px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .form-section {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    justify-content: space-between;
+  }
+
+  .form-title {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .form-input {
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
