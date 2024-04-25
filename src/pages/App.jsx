@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import Form from '../components/Form';
+import Home from '../pages/Home'
+import AddCard from '../pages/AddCard'
 
 function App() {
   return (
@@ -18,5 +20,19 @@ function App() {
     </div>
   );
 }
+
+/*
+function App() {
+  return (
+    <Router>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/add-card" element={<AddCard />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}*/
 
 export default App;
