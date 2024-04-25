@@ -131,6 +131,23 @@ body {
   ///////// BUTTON /////////////////////////////////////////
   /////////////////////////////////////////////////////////
   */
+     .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+      border: 1px solid black;
+      padding: 20px;
+      width: 100%;
+      max-width: 382px;
+      height: 80px;
+      border-radius: 8px;
+      font-family: 'PT Mono';
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24.64px;
+      text-align: center;
+  }
   
 
 
