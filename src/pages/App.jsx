@@ -15,6 +15,7 @@ function App() {
       <Card vendor="block" number="1234 5678 9101 1123"/>
       <Card vendor="evil" number="1234 5678 9101 1123"/>
       <Button />
+      <Form />
     </div>
   );
 }
