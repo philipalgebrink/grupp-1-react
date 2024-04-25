@@ -11,7 +11,7 @@ import AddCard from '../pages/AddCard';
 function Home() {
   return (
     <div>
-      <Header title="e-wallet" />
+      <Header title="E-WALLET" />
       <div className="App">
       <p className="title">ACTIVE CARD</p>
         <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
