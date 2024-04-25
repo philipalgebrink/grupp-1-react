@@ -6,8 +6,7 @@ function Header({ title }) {
       fontWeight: 700,
       lineHeight: "35px",
           height: "98px",
-          top: "9px",
-          width: "350px"
+          margin: "50px",
            }}>
         {title}
       </div>
