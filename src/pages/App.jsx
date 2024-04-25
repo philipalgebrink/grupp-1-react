@@ -1,38 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import '../reset.css';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import Form from '../components/Form';
-import Home from '../pages/Home'
-import AddCard from '../pages/AddCard'
+import Home from '../pages/Home';
+import AddCard from '../pages/AddCard';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <p className="title">ACTIVE CARD</p>
-      <Card vendor="bitcoin" number="1234 5678 9101 1123"/>
-      <Card vendor="ninja" number="1234 5678 9101 1123"/>
-      <Card vendor="block" number="1234 5678 9101 1123"/>
-      <Card vendor="evil" number="1234 5678 9101 1123"/>
-      <Button />
-    </div>
-  );
-}
-
-/*
-function App() {
-  return (
-    <Router>
+    <BrowserRouter>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/add-card" element={<AddCard />} />
+          <Route path="/addcard" element={<AddCard />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
-}*/
+}
 
 export default App;
