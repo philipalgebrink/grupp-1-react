@@ -14,7 +14,15 @@ function Button({ title }) {
             height: "80px",
             borderRadius: "8px",
         }}>
-          {title}
+          <div style={{
+            fontFamily: 'PT Mono',
+            fontSize: '22px',
+            fontWeight: 700,
+            lineHeight: '24.64px',
+            textAlign: 'center'
+            }}>
+            {title}
+            </div>
         </div>
       </div>
     );
