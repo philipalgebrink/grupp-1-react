@@ -7,7 +7,7 @@ import Button from './components/Button';
 function AddCard() {
   return (
     <div className="App">
-      <Header />
+      <Header title="ADD A NEW BANK CARD" />
       <Card />
       <Form />
       <Button />
