@@ -10,7 +10,7 @@ function AddCard() {
       <Header title="ADD A NEW BANK CARD" />
       <Card />
       <Form />
-      <Button />
+      <Button title="ADD card"/>
     </div>
   );
 }

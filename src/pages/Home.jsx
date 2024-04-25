@@ -20,7 +20,7 @@ function Home() {
         <Card vendor="evil" number="1234 5678 9101 1123"/>
       </div>
       <Link to="/addcard">
-        <button>Add a new card</button>
+      <Button title="ADD card"/>
       </Link>
     </div>
   );
