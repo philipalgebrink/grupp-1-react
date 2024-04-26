@@ -8,6 +8,9 @@
 body {
   margin: 0px;
   padding: 0px;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
@@ -158,37 +161,50 @@ body {
     font-size: 35px;
     font-weight: 700;
     line-height: 35px;
-    height: 98px;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
+    margin: 50px auto 40px;
+}
+
+  .subheader{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 35px;
+    color: rgba(34, 34, 34, 0.6);
 }
   /* ////////////////////////////////////////////////////////
   ///////// BUTTON /////////////////////////////////////////
   /////////////////////////////////////////////////////////
   */
-     .btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px;
-      border: 1px solid black;
-      padding: 20px;
-      width: 100%;
-      max-width: 382px;
-      height: 80px;
-      border-radius: 8px;
-      font-family: 'PT Mono';
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 24.64px;
-      text-align: center;
-      background-color: black;
-      color: white;
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 80px;
+    border-radius: 8px;
+    font-family: 'PT Mono';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24.64px;
+    text-align: center;
+    background-color: black;
+    color: white;
 
   }
   .btn.home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border: 1px solid black;
+    height: 80px;
+    border-radius: 8px;
+    font-family: 'PT Mono';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24.64px;
+    text-align: center;
     background-color: white;
     color: black;
   }
