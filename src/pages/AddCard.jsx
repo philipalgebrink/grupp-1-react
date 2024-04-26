@@ -10,8 +10,8 @@ function AddCard() {
   return (
     <div className="App">
       <Header title="ADD A NEW BANK CARD" />
-      <NewCard />
       <SubHeader title="NEW CARD" />
+      <NewCard />
       <Form />
       <Button title="ADD card" />
     </div>
