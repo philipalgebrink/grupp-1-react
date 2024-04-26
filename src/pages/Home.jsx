@@ -36,7 +36,7 @@ const Home = () => {
   };
 
   return (
-         <div className="App">
+    <div className="App">
       <Header title="E-WALLET" />
       <SubHeader title="ACTIVE CARD" />
       <div className="App">
@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </div>
       <Link to="/addcard">
-      <Button title="ADD A NEW CARD" className="home-button" />      
+        <Button title="ADD A NEW CARD" className="home-button" />
       </Link>
     </div>
   );

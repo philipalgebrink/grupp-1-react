@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Mono");
 
 * {
-  font-family: Source open sans ,sans-serif;
+  font-family: Source open sans, sans-serif;
 }
 
 body {
   margin: 0px;
   padding: 0px;
-  display:flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -29,7 +29,7 @@ body {
 
 /* Standard kort */
 .card {
-  background-color: #ffae34;
+  background-color: #bbbbbb;
   border-radius: 8px;
   padding: 10px;
   width: 382px;
@@ -97,7 +97,15 @@ body {
   font-weight: 400;
   max-width: 335px;
   line-height: 32px;
+  color: black;
+}
+
+.white-text {
   color: white;
+}
+
+.invert {
+  filter: invert(1);
 }
 
 .namedate {
@@ -156,58 +164,60 @@ body {
   ///////// HEADER ///////////////////////////////////////////
   ///////////////////////////////////////////////////////////
   */
-  .header {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 35px;
-    width: 300px;
-    margin: 50px auto 40px;
+.header {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 35px;
+  width: 300px;
+  margin: 50px auto 40px;
 }
 
-  .subheader{
-    text-align: center;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 35px;
-    color: rgba(34, 34, 34, 0.6);
+.subheader {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 35px;
+  color: rgba(34, 34, 34, 0.6);
 }
-  /* ////////////////////////////////////////////////////////
+
+/* ////////////////////////////////////////////////////////
   ///////// BUTTON /////////////////////////////////////////
   /////////////////////////////////////////////////////////
   */
-  .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    height: 80px;
-    border-radius: 8px;
-    font-family: 'PT Mono';
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 24.64px;
-    text-align: center;
-    background-color: black;
-    color: white;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 80px;
+  border-radius: 8px;
+  font-family: 'PT Mono';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.64px;
+  text-align: center;
+  background-color: black;
+  color: white;
 
-  }
-  .btn.home-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    border: 1px solid black;
-    height: 80px;
-    border-radius: 8px;
-    font-family: 'PT Mono';
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 24.64px;
-    text-align: center;
-    background-color: white;
-    color: black;
-  }
+}
+
+.btn.home-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border: 1px solid black;
+  height: 80px;
+  border-radius: 8px;
+  font-family: 'PT Mono';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.64px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
 
 
 
@@ -238,12 +248,21 @@ body {
   font-family: 'PT Mono';
 }
 
-.form-input {
-  height: 40px;
-  border: solid 1px black;
-  border-radius: 5px;
-  padding: 0 10px;
+.form-container {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 10px;
+}
+
+.form-input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-validthru,
+.form-ccv {
+  margin-bottom: 5px;
 }
 
 .form-input {
@@ -252,4 +271,12 @@ body {
   border-radius: 5px;
   padding: 0 10px;
   margin-bottom: 10px;
+}
+
+.form-dropdown {
+  height: 40px;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-right: 5px;
 }
