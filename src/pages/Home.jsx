@@ -58,7 +58,7 @@ const Home = () => {
         </div>
       </div>
       <Link to="/addcard">
-      <Button title="Add a new card" className="home-button" />
+      <Button title="Add a new card" className="home-button" />      
       </Link>
     </div>
   );
