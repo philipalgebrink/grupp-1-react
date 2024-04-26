@@ -181,9 +181,14 @@ body {
       font-weight: 700;
       line-height: 24.64px;
       text-align: center;
+      background-color: black;
+      color: white;
+
   }
-
-
+  .btn.home-button {
+    background-color: white;
+    color: black;
+  }
 
 
 
