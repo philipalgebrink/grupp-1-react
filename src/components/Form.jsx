@@ -1,20 +1,21 @@
+import NewCard from "./NewCard";
 import { useState } from "react";
 
 export default function Form() {
-  const [number, setNumber] = useState("");
+  const [cardNumber, setCardNumber] = useState("");
   const handleChange = (event) => {
-    setNumber(event.target.value);
+    setCardNumber(event.target.value);
   };
   return (
     <form className="form">
+      <NewCard cardNumber={cardNumber} />
       <label className="form-title">CARD NUMBER</label>
       <input
         className="form-input"
         type="text"
-        value={number}
+        value={cardNumber}
         onChange={handleChange}
       />
-      <p>{number}</p>
       <label className="form-title">CARDHOLDER NAME</label>
       <input
         className="form-input"

@@ -2,14 +2,14 @@ import React from 'react';
 import chipLogo from '../assets/chiplogo.svg';
 import wifiLogo from '../assets/wifilogo.svg';
 
-const NewCard = ({ vendor, number, name }) => {
+const NewCard = ({ vendor, cardNumber, name }) => {
     const cardClassName = `card ${vendor}`;
 
     return (
         <div className={cardClassName}>
             <img src={wifiLogo} alt="wifi" className="wifilogo" />
             <img src={chipLogo} alt="chip" className="chiplogo" />
-            <h1 className="number">{number || 'XXXX XXXX XXXX XXXX'}</h1>
+            <h1 className="number">{cardNumber || 'XXXX XXXX XXXX XXXX'}</h1>
             <div className="namedate">
                 <div className="line1">
                     <p>CARDHOLDER NAME</p>
