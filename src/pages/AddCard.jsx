@@ -1,10 +1,12 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 import Header from '../components/Header';
-import Card from '../components/Card';
+import NewCard from '../components/NewCard';
 import Form from '../components/Form';
 import Button from '../components/Button';
-import NewCard from '../components/NewCard';
 import SubHeader from '../components/SubHeader';
+import Home from './Home';
 
 function AddCard() {
   return (
@@ -13,7 +15,9 @@ function AddCard() {
       <SubHeader title="NEW CARD" />
       <NewCard />
       <Form />
-      <Button title="ADD CARD" />
+      <Link to="/"> {Home}
+        <Button title="ADD CARD" />
+      </Link>
     </div>
   );
 }
