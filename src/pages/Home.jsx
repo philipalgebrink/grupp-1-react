@@ -36,7 +36,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+         <div className="App">
       <Header title="E-WALLET" />
       <SubHeader title="ACTIVE CARD" />
       <div className="App">
