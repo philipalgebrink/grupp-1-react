@@ -173,6 +173,8 @@ body {
       padding: 20px;
       width: 100%;
       max-width: 382px;
+      
+      max-width: 382px;
       height: 80px;
       border-radius: 8px;
       font-family: 'PT Mono';
