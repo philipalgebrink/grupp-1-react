@@ -8,6 +8,7 @@ import Button from '../components/Button';
 import Form from '../components/Form';
 import ActiveCard from '../components/ActiveCard';
 import AddCard from '../pages/AddCard';
+import SubHeader from '../components/SubHeader';
 
 
 const Home = () => {
@@ -37,6 +38,7 @@ const Home = () => {
   return (
     <div>
       <Header title="E-WALLET" />
+      <SubHeader title="ACTIVE CARD" />
       <div className="App">
         {activeCard !== null && (
           <ActiveCard
