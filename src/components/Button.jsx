@@ -1,7 +1,11 @@
-export default function Button() {
-    return(
-    <div>
-        <h1>Button</h1>
+import '../pages/App.css';
+
+function Button({ title, className }) {
+  return (
+    <div className={`btn ${className}`}>
+      {title}
     </div>
-    );
+  );
 }
+
+export default Button;
