@@ -15,7 +15,7 @@ function AddCard() {
       <SubHeader title="NEW CARD" />
       <NewCard />
       <Form />
-      <Link to="/"> {Home}
+      <Link to="/">  
         <Button title="ADD CARD" />
       </Link>
     </div>
