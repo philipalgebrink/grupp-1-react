@@ -29,10 +29,10 @@ export default function Form() {
       </section>
       <label className="form-title">VENDOR</label>
       <select className="form-input" name="#" id="#">
-        <option value="#">1</option>
-        <option value="#">2</option>
-        <option value="#">3</option>
-        <option value="#">4</option>
+        <option value="#">Bitcoin</option>
+        <option value="#">Ninja</option>
+        <option value="#">Block</option>
+        <option value="#">Evil</option>
       </select>
     </form>
   );
