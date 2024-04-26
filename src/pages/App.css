@@ -167,17 +167,17 @@ body {
   /////////////////////////////////////////////////////////
   */
      .btn {
-      margin: 20px;
-      padding: 20px;
-      height: 80px;
-      border-radius: 8px;
-      font-family: 'PT Mono';
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 24.64px;
-      text-align: center;
-      background-color: black;
-      color: white;
+    margin: 20px;
+    padding: 20px;
+    height: 80px;
+    border-radius: 8px;
+    font-family: 'PT Mono';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24.64px;
+    text-align: center;
+    background-color: black;
+    color: white;
 
   }
   .btn.home-button {
