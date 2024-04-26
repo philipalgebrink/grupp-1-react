@@ -10,6 +10,12 @@ import Home from '../pages/Home';
 import AddCard from '../pages/AddCard';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
+/* Struktur Routing:
+När Bas-URL:en besöks renderas Home-komponenten.
+När Bas-URL/addcard besöks renderas AddCard-komponenten.
+ */
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,5 +28,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;
