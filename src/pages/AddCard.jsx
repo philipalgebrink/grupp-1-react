@@ -13,7 +13,7 @@ function AddCard() {
       <SubHeader title="NEW CARD" />
       <NewCard />
       <Form />
-      <Button title="ADD card" />
+      <Button title="ADD CARD" />
     </div>
   );
 }
