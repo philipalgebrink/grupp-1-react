@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export default function Form() {
   const [number, setNumber] = useState("");
@@ -14,8 +14,12 @@ export default function Form() {
         value={number}
         onChange={handleChange}
       />
+      <p>{number}</p>
       <label className="form-title">CARDHOLDER NAME</label>
-      <input className="form-input" type="text" />
+      <input
+        className="form-input"
+        type="text"
+      />
       <section className="form-section">
         <label className="form-title">VALID THRU</label>
         <label className="form-title">CCV</label>

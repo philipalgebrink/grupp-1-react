@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Mono");
 
 * {
-  font-family: sans-serif;
+  font-family: Source open sans ,sans-serif;
 }
 
 body {
@@ -94,6 +94,7 @@ body {
   font-weight: 400;
   max-width: 335px;
   line-height: 32px;
+  color: white;
 }
 
 .namedate {
@@ -118,12 +119,14 @@ body {
   margin: 0;
   font-size: 12px;
   line-height: 13px;
+  font-family: 'PT Mono';
 }
 
 .line2 p {
   margin: 0;
   font-size: 20px;
   line-height: 20px;
+  font-family: 'PT Mono';
 }
 
 .activeCard {
@@ -216,6 +219,7 @@ body {
 .form-title {
   margin-top: 10px;
   font-size: 12px;
+  font-family: 'PT Mono';
 }
 
 .form-input {
