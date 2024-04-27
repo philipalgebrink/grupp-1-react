@@ -14,10 +14,10 @@ const Home = () => {
   const [activeCardId, setActiveCardId] = useState(1);
 
   const [bottomCards, setBottomCards] = useState([
-    { id: 1, vendor: "bitcoin", number: "0101 1101 1110 0011", name: "Donald Whent", date: "12/24" },
-    { id: 2, vendor: "ninja", number: "5555 5555 5555 5555", name: "Donald Whent", date: "12/24" },
-    { id: 3, vendor: "block", number: "7777 7777 7777 7777", name: "Donald Whent", date: "12/24" },
-    { id: 4, vendor: "evil", number: "0999 0999 0999 0999", name: "Donald Whent", date: "12/24" }
+    { id: 1, vendor: "bitcoin", number: "0101 1101 1110 0011", name: "Philip Älgebrink", date: "01/27" },
+    { id: 2, vendor: "ninja", number: "5555 5555 5555 5555", name: "Ann Heijkenskjöld", date: "02/24" },
+    { id: 3, vendor: "block", number: "7777 7777 7777 7777", name: "Baran Bulduk", date: "04/28" },
+    { id: 4, vendor: "evil", number: "0999 0999 0999 0999", name: "Emma Dybdorf", date: "05/26" }
   ]);
 
   const [newCard, setNewCard] = useState(null);
