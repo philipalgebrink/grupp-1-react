@@ -24,22 +24,26 @@ const Card = ({ vendor, number, handleClick, name, date, active }) => {
   const cardClassName = `card ${vendor} ${active ? 'active' : ''}`;
   const vendorlogoSrc = vendorLogos[vendor] || '';
 
+  // Ändra wifi loggan me filter om kortet är bitcoin (syns dåligt på bitcoin färgen) la även till att kolla efter ingen vendor för safety
   const isBitcoin = vendor === 'bitcoin';
+
+  // Ändra färg på text me filter om kortet är ninja (svart på svart är inte bra)
+  const isNinja = vendor === 'ninja';
 
   return (
     <div className={cardClassName} onClick={() => { handleClick(vendor); }}>
       <img src={wifiLogo} alt="wifi" className="wifilogo" style={{ filter: isBitcoin ? 'none' : 'invert(1)' }} />
       <img src={chipLogo} alt="chip" className="chiplogo" />
       {vendorlogoSrc && <img src={vendorlogoSrc} alt={`${vendor} Logo`} className="vendorlogo" />}
-      <h1 className="number">{number}</h1>
+      <h1 className={`number ${isNinja ? 'white-text' : ''}`}>{number || 'XXXX XXXX XXXX XXXX'}</h1>
       <div className="namedate">
         <div className="line1">
-          <p>CARDHOLDER NAME</p>
-          <p>VALID THRU</p>
+          <p className={isNinja ? 'white-text' : ''}>CARDHOLDER NAME</p>
+          <p className={isNinja ? 'white-text' : ''}>VALID THRU</p>
         </div>
         <div className="line2">
-          <p>{name}</p>
-          <p>{date}</p>
+          <p className={isNinja ? 'white-text' : ''}>{name || 'Cardholder Name'}</p>
+          <p className={isNinja ? 'white-text' : ''}>{date || "01/24"}</p>
         </div>
       </div>
     </div>
