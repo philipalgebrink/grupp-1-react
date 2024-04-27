@@ -19,7 +19,7 @@ const vendorLogos = {
   evil: evilLogo,
 };
 
-const Card = ({ vendor, number, handleClick, active }) => {
+const Card = ({ vendor, number, handleClick, name, date, active }) => {
   // Sätt korrekt färg och logotyp för kort
   const cardClassName = `card ${vendor} ${active ? 'active' : ''}`;
   const vendorlogoSrc = vendorLogos[vendor] || '';
@@ -38,8 +38,8 @@ const Card = ({ vendor, number, handleClick, active }) => {
           <p>VALID THRU</p>
         </div>
         <div className="line2">
-          <p>Philip Älgebrink</p>
-          <p>12/24</p>
+          <p>{name}</p>
+          <p>{date}</p>
         </div>
       </div>
     </div>
