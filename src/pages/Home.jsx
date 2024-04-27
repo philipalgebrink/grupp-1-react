@@ -26,7 +26,7 @@ const Home = () => {
   useEffect(() => {
     if (location.state && location.state.newCard) {
       const newCardData = location.state.newCard;
-      console.log('New card details:', newCardData);
+
       setNewCard(newCardData);
     }
   }, [location]);

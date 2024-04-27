@@ -17,16 +17,10 @@ function AddCard() {
   const [cardDate, setCardDate] = useState('');
 
   const handleAddCard = () => {
-    console.log('Adding new card...');
-    console.log('Card Number:', cardNumber);
-    console.log('Card Name:', cardName);
-    console.log('Card Vendor:', cardVendor);
-    console.log('Card Date:', cardDate);
     if (!cardNumber || !cardName || !cardVendor || !cardDate) {
       alert("All fields must be filled out.");
       return; // Låt inte personen lägga till kort utan full information
     }
-    console.log("NAVIGERA SNÄLLA");
     navigate('/', { state: { newCard: { number: cardNumber, name: cardName, vendor: cardVendor, date: cardDate } } }); // Navigera till home
   };
 
