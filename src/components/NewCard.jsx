@@ -21,7 +21,7 @@ const vendorLogos = {
     evil: evilLogo,
 };
 
-const NewCard = ({ vendor, number, name, date }) => {
+const NewCard = ({ vendor, number, name, date, ccv }) => {
     const cardClassName = `card ${vendor}`;
     const vendorlogoSrc = vendorLogos[vendor] || '';
 

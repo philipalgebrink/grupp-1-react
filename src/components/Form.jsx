@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate }) => {
+const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardCcv }) => {
   const handleNumberChange = (event) => {
     const formattedValue = event.target.value.replace(/\D/g, '');
     const formattedNumber = formattedValue.replace(/(\d{4})/g, '$1 ').trim();
@@ -12,6 +12,12 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate }) => {
   const handleCardNameChange = (event) => {
     if (event.target.value.length <= 22) {
       setCardName(event.target.value);
+    }
+  };
+
+  const handleCardCcvChange = (event) => {
+    if (event.target.value.length <= 3) {
+      setCardCcv(event.target.value);
     }
   };
 
@@ -97,6 +103,7 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate }) => {
                   event.preventDefault();
                 }
               }}
+              onChange={handleCardCcvChange}
             />
           </div>
         </div>

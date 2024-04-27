@@ -15,13 +15,18 @@ function AddCard() {
   const [cardName, setCardName] = useState('');
   const [cardVendor, setCardVendor] = useState('');
   const [cardDate, setCardDate] = useState('');
+  const [cardCcv, setCardCcv] = useState('');
 
   const handleAddCard = () => {
-    if (!cardNumber || !cardName || !cardVendor || !cardDate) {
+    // Ta bort spaces från cardnumber för att underlätta räkning
+    const cardNumberWithoutSpaces = cardNumber.replace(/\s/g, '');
+
+    if (!cardNumberWithoutSpaces || cardNumberWithoutSpaces.length !== 16 || !cardName || !cardVendor || !cardDate || !cardCcv || cardCcv.length !== 3) {
+
       alert("All fields must be filled out.");
       return; // Låt inte personen lägga till kort utan full information
     }
-    navigate('/', { state: { newCard: { number: cardNumber, name: cardName, vendor: cardVendor, date: cardDate } } }); // Navigera till home
+    navigate('/', { state: { newCard: { number: cardNumber, name: cardName, vendor: cardVendor, date: cardDate, ccv: cardCcv } } }); // Navigera till home
   };
 
   return (
@@ -34,6 +39,7 @@ function AddCard() {
         setCardName={setCardName}
         setCardVendor={setCardVendor}
         setCardDate={setCardDate}
+        setCardCcv={setCardCcv}
       />
       <Button title="ADD CARD" className="btn" onClick={handleAddCard} />
     </div>

@@ -19,7 +19,7 @@ const vendorLogos = {
   evil: evilLogo,
 };
 
-const Card = ({ vendor, number, handleClick, name, date, active }) => {
+const Card = ({ vendor, number, handleClick, name, date, ccv, active }) => {
   // Sätt korrekt färg och logotyp för kort
   const cardClassName = `card ${vendor} ${active ? 'active' : ''}`;
   const vendorlogoSrc = vendorLogos[vendor] || '';
