@@ -1,21 +1,28 @@
 import React from 'react';
 
 const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardCcv }) => {
+  // Hantera ändringar i kortnumret
   const handleNumberChange = (event) => {
+    // Formatera inkommande nummer genom att ta bort alla icke-siffror och lägga till mellanslag var 4:e tecken
     const formattedValue = event.target.value.replace(/\D/g, '');
     const formattedNumber = formattedValue.replace(/(\d{4})/g, '$1 ').trim();
+    // Kontrollera att numret inte överstiger 16 (19 pga mellanslag) tecken
     if (formattedNumber.length <= 19) {
       setCardNumber(formattedNumber);
     }
   };
 
+  // Hantera ändringar i kortinnehavarens namn
   const handleCardNameChange = (event) => {
+    // Kontrollera att namnet inte överstiger 22 tecken
     if (event.target.value.length <= 22) {
       setCardName(event.target.value);
     }
   };
 
+  // Hantera ändringar i CCV
   const handleCardCcvChange = (event) => {
+    // Kontrollera att CCV inte överstiger 3 tecken
     if (event.target.value.length <= 3) {
       setCardCcv(event.target.value);
     }
@@ -25,9 +32,13 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardC
     setCardVendor(event.target.value);
   };
 
+  // Hantera ändringar i vald månad och år
   const handleDateChange = (event) => {
+    // Hämta vald månad och år från dropdown-menyer
     const selectedMonth = event.target.parentElement.querySelector('.month-dropdown').value;
     const selectedYear = event.target.parentElement.querySelector('.year-dropdown').value;
+
+    // Formatera datumet i formatet "MM/YY" och skicka till funktionen för att uppdatera kortets datum
     const formattedDate = `${selectedMonth}/${selectedYear}`;
     setCardDate(formattedDate);
   };
@@ -42,6 +53,7 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardC
         onKeyPress={(event) => {
           const charCode = event.charCode;
           const inputValue = event.target.value;
+          // Tillåt endast siffror och max 16 tecken
           if ((charCode < 48 || charCode > 57) || inputValue.length >= 16) {
             event.preventDefault();
           }
@@ -50,6 +62,7 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardC
       />
 
       <label className="form-title">CARDHOLDER NAME</label>
+      {/* Input-fält för kortinnehavarens namn, med begränsning till 22 tecken */}
       <input
         className="form-input"
         type="text"
@@ -57,6 +70,7 @@ const Form = ({ setCardNumber, setCardName, setCardVendor, setCardDate, setCardC
         onKeyPress={(event) => {
           const charCode = event.charCode;
           const inputValue = event.target.value;
+          // Tillåt endast bokstäver och mellanslag, max 22 tecken
           if ((charCode >= 48 && charCode <= 57) || inputValue.length >= 22) {
             event.preventDefault();
           }

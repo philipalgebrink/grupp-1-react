@@ -11,8 +11,10 @@ import NewCard from '../components/NewCard';
 
 
 const Home = () => {
+  // Vilket ID som är aktivt kort
   const [activeCardId, setActiveCardId] = useState(1);
 
+  // Sätt värden på korten (Bottom cards)
   const [bottomCards, setBottomCards] = useState([
     { id: 1, vendor: "bitcoin", number: "0101 1101 1110 0011", name: "Philip Älgebrink", date: "01/27" },
     { id: 2, vendor: "ninja", number: "5555 5555 5555 5555", name: "Ann Heijkenskjöld", date: "02/24" },
@@ -20,9 +22,11 @@ const Home = () => {
     { id: 4, vendor: "evil", number: "0999 0999 0999 0999", name: "Emma Dybdorf", date: "05/26" }
   ]);
 
+  // Nytt kort som vi skapar
   const [newCard, setNewCard] = useState(null);
   const location = useLocation();
 
+  // Hantera nytt kort vid ändring i location
   useEffect(() => {
     if (location.state && location.state.newCard) {
       const newCardData = location.state.newCard;
@@ -31,6 +35,7 @@ const Home = () => {
     }
   }, [location]);
 
+  // Lägg till nytt kort till listan
   useEffect(() => {
     if (newCard) {
       setBottomCards(prevCards => [...prevCards, newCard]);
@@ -38,6 +43,7 @@ const Home = () => {
     }
   }, [newCard]);
 
+  // Hantera klick på kort
   const handleClick = (clickedId) => {
     if (clickedId !== activeCardId) {
       const clickedIndex = bottomCards.findIndex(card => card.id === clickedId);
@@ -57,6 +63,7 @@ const Home = () => {
       <Header title="E-WALLET" />
       <SubHeader title="ACTIVE CARD" />
       <div className="App">
+        {/* Visa det aktiva kortet */}
         {activeCardId !== null && (
           <ActiveCard
             vendor={bottomCards.find(card => card.id === activeCardId)?.vendor || ""}
@@ -67,6 +74,7 @@ const Home = () => {
           />
         )}
         <div className="bottomCards">
+          {/* Visa övriga kort */}
           {bottomCards
             .filter(card => card.id !== activeCardId) // Ta bort aktiva kortet (så de inte blir duplicering)
             .map((card, index) => (
