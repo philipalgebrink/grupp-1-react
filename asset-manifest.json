@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/grupp-1-react/static/css/main.c5b3f966.css",
-    "main.js": "/grupp-1-react/static/js/main.33df78ef.js",
-    "static/js/453.8676036e.chunk.js": "/grupp-1-react/static/js/453.8676036e.chunk.js",
-    "static/media/bitcoinlogo.svg": "/grupp-1-react/static/media/bitcoinlogo.fe899f0eb92eb1690db155c5ebed249c.svg",
-    "static/media/blocklogo.svg": "/grupp-1-react/static/media/blocklogo.c1812bfc693d610e0ed8f92d528bb371.svg",
-    "static/media/wifilogo.svg": "/grupp-1-react/static/media/wifilogo.7bacc599a719fccb8e3076beb84310a0.svg",
-    "static/media/ninjalogo.svg": "/grupp-1-react/static/media/ninjalogo.c01309168a6649e3c08d51815272e504.svg",
-    "static/media/evillogo.svg": "/grupp-1-react/static/media/evillogo.215368ba267172c490a236abb0847851.svg",
-    "index.html": "/grupp-1-react/index.html",
-    "static/media/chiplogo.svg": "/grupp-1-react/static/media/chiplogo.a68e13088dc3c7b0031d50f58b868bcc.svg",
-    "main.c5b3f966.css.map": "/grupp-1-react/static/css/main.c5b3f966.css.map",
-    "main.33df78ef.js.map": "/grupp-1-react/static/js/main.33df78ef.js.map",
-    "453.8676036e.chunk.js.map": "/grupp-1-react/static/js/453.8676036e.chunk.js.map"
+    "main.css": "/static/css/main.c5b3f966.css",
+    "main.js": "/static/js/main.03942aba.js",
+    "static/js/453.8676036e.chunk.js": "/static/js/453.8676036e.chunk.js",
+    "static/media/bitcoinlogo.svg": "/static/media/bitcoinlogo.fe899f0eb92eb1690db155c5ebed249c.svg",
+    "static/media/blocklogo.svg": "/static/media/blocklogo.c1812bfc693d610e0ed8f92d528bb371.svg",
+    "static/media/wifilogo.svg": "/static/media/wifilogo.7bacc599a719fccb8e3076beb84310a0.svg",
+    "static/media/ninjalogo.svg": "/static/media/ninjalogo.c01309168a6649e3c08d51815272e504.svg",
+    "static/media/evillogo.svg": "/static/media/evillogo.215368ba267172c490a236abb0847851.svg",
+    "index.html": "/index.html",
+    "static/media/chiplogo.svg": "/static/media/chiplogo.a68e13088dc3c7b0031d50f58b868bcc.svg",
+    "main.c5b3f966.css.map": "/static/css/main.c5b3f966.css.map",
+    "main.03942aba.js.map": "/static/js/main.03942aba.js.map",
+    "453.8676036e.chunk.js.map": "/static/js/453.8676036e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5b3f966.css",
-    "static/js/main.33df78ef.js"
+    "static/js/main.03942aba.js"
   ]
 }
